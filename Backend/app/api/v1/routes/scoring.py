@@ -6,6 +6,7 @@ from app.core.security import get_api_key
 router = APIRouter()
 
 @router.get("/score/{user_id}", response_model=ScoreResult, dependencies=[Depends(get_api_key)])
+@router.get("/predict/{user_id}", response_model=ScoreResult, dependencies=[Depends(get_api_key)])
 async def get_score(user_id: str):
     score_data = get_user_score(user_id)
     if score_data is None:

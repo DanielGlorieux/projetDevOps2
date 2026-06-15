@@ -31,6 +31,8 @@ docker compose up --build -d
 2. **Backend (API)** : Accessible via [http://localhost:8000](http://localhost:8000)
 3. **Base de données** : Expose le port PostgreSQL classique `5432`
 
+> Note : une URL publique temporaire est disponible pendant que le déploiement AWS est en cours de finalisation : https://cequality-frontend.onrender.com
+
 ## Documentation et Rapports
 
 Vous trouverez tous les rapports de planification et de validation liés au livrable dans le dossier `docs/` (le rapport final PDF a été généré localement).
